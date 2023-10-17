@@ -1,14 +1,12 @@
-"use client";
-import * as React from "react";
-import "../styles/global.css";
+import * as React from 'react';
+import ThemeRegistry from '@/components/ThemeRegistry/ThemeRegistry';
 
-export default function RootLayout(children) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body>{children}</body>
+      <body style={{ height: '100%' }}>
+        <ThemeRegistry>{children}</ThemeRegistry>
+      </body>
     </html>
   );
 }
