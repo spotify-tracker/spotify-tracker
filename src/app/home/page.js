@@ -3,7 +3,9 @@ import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import { Box, Grid } from '@mui/material';
 
-import Profile from '../components/profile/Profile';
+import Profile from '../../components/profile/Profile';
+
+import Footer from '../../components/footer/footer'
 
 // http://localhost:3000/
 // http://localhost:3000/home
@@ -22,7 +24,8 @@ export default function HomePage() {
 
   return (
     <>
-      <Grid container spacing={1} sx={{ height: '100vh', mt: 0, p: '8px' }}>
+
+      <Grid container spacing={1} sx={{ height: '95vh', mt: 0, p: '8px' }}>
         <Grid
           container
           direction="column"
@@ -40,13 +43,14 @@ export default function HomePage() {
             <Profile style={boxStyle} />
           </Grid>
           <Grid item xs={9}>
-            <Box sx={boxStyle}>sex</Box>
+            <Box sx={boxStyle}>VOCE ESTA NA PAGINA HOME</Box>
           </Grid>
         </Grid>
         <Grid item xs={8} sm={9}>
-          <Box sx={boxStyle}>teste</Box>
+          <Box sx={boxStyle}>teste1</Box>
         </Grid>
       </Grid>
+      <Footer></Footer>
     </>
   );
 }
